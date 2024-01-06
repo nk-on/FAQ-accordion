@@ -63,7 +63,9 @@ main {
     height: 1px;
     background-color: var(--Light-pink);
 }
-
+.sign-icon{
+    cursor: pointer;
+}
 .hidden {
     display: none;
 }
@@ -73,7 +75,6 @@ main {
     flex-direction: column;
     gap: 30px;
 }
-
 @media screen and (max-width: 760px) {
     .background-pattern {
         background-image: url("/assets/images/background-pattern-mobile.svg");
