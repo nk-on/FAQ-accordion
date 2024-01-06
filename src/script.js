@@ -9,6 +9,7 @@ signIcons.forEach(
                 icon.classList.add("plus");
             }else{
                 icon.src = "assets/images/icon-minus.svg";
+                icon.classList.remove("plus")
                 hiddenTextElements[index].classList.add("hidden");
             }
         });
