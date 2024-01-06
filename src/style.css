@@ -57,7 +57,10 @@ main{
         background-image: url("/assets/images/background-pattern-mobile.svg");
         background-size: cover;
     }
-    .block{
-        height: 20%;
+    .FAQ-container{
+        padding: 0 5vw;
+    }
+    .title{
+        font-size: 0.8rem;
     }
 }
