@@ -53,7 +53,10 @@ main {
     justify-content: space-between;
     position: relative;
 }
-
+.block-title:hover{
+    cursor: pointer;
+    color:var(--Dark-purple);
+}
 .block-title::after {
     content: "";
     position: absolute;
