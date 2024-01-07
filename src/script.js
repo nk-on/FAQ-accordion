@@ -7,6 +7,7 @@ signIcons.forEach(
                 hiddenTextElements[index].classList.remove("hidden");
                 icon.src = "assets/images/icon-plus.svg";
                 icon.classList.add("plus");
+                removeCollapse(index);
             }else{
                 icon.src = "assets/images/icon-minus.svg";
                 icon.classList.remove("plus")
@@ -15,3 +16,16 @@ signIcons.forEach(
         });
     }
 );
+function removeCollapse(index){
+    hiddenTextElements.forEach(
+        (hiddenTextElement,elementIndex)=>{
+            if(!hiddenTextElement.classList.contains("hidden") &&  index !== elementIndex){
+                hiddenTextElement.classList.add("hidden");
+                signIcons.forEach((icon)=>{
+                    icon.classList.remove("plus");
+                    icon.src = "assets/images/icon-minus.svg";
+                });
+            }
+        }
+    )
+};
