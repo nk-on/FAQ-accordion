@@ -32,7 +32,7 @@ main {
 
 .FAQ-container {
     width: min(700px, 90%);
-    height: min(500px, 90vh);
+    min-height: min(500px, 90vh);
     background-color: var(--White);
     margin-top: -20vh;
     display: flex;
@@ -46,7 +46,18 @@ main {
     align-items: center;
     gap: 5px;
 }
-
+.block{
+    position: relative;
+}
+.block::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--Light-pink);
+}
 .block-title {
     display: flex;
     align-items: center;
@@ -56,15 +67,6 @@ main {
 .block-title:hover{
     cursor: pointer;
     color:var(--Dark-purple);
-}
-.block-title::after {
-    content: "";
-    position: absolute;
-    top: 150%;
-    left: 0%;
-    width: 100%;
-    height: 1px;
-    background-color: var(--Light-pink);
 }
 .sign-icon{
     cursor: pointer;
