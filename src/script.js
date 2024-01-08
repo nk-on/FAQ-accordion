@@ -1,5 +1,6 @@
 const signIcons = document.querySelectorAll(".sign-icon");
 const hiddenTextElements = document.querySelectorAll(".text");
+//implementing hiding and colapsing behaviour when user clicks on icon
 signIcons.forEach(
     (icon, index) => {
         icon.addEventListener("click", () => {
@@ -16,6 +17,7 @@ signIcons.forEach(
         });
     }
 );
+//hiding other blocks when one block is already collapsed
 function removeCollapse(index){
     hiddenTextElements.forEach(
         (hiddenTextElement,elementIndex)=>{
